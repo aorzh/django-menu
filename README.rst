@@ -17,7 +17,7 @@ Installation & Configuration:
 
 2. Add ``menu`` to your ``INSTALLED_APPS``
 
-3. ``./manage.py migrate menu`` (or ``./manage.py syncdb`` if you don't use South. You should use South.)
+3. ``./manage.py migrate menu`` (or ``./manage.py makemigrations`` on Django 1.7)
 
 4. Add ``django.core.context_processors.request`` to your ``TEMPLATE_CONTEXT_PROCESSORS``. It is not there by default. The default ``TEMPLATE_CONTEXT_PROCESSORS`` are:::
 
